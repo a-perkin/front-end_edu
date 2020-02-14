@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>L_2 P_1 HomeWork Perkin Aleksandr</title>	
+</head>
+<body>
+
+	<script>
+		//Пункт 1  __ 1 1 2 3 5 8 13 21 34 55 89
+		var n = prompt("Введите кол-во чисел из ряда Фибоначчи:");
+		var f0 = 0;
+		var f1 = 1;
+		var f = 1;
+
+		for(i = 0; i <= n; i++){
+			document.writeln(f);
+			f = f0 + f1;			
+			f0 = f1;
+			f1 = f;
+		}
+		
+	</script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>L_2 P_2 HomeWork Perkin Aleksandr</title>	
+</head>
+<body>
+
+	<script>
+		//Пункт 2  __ 1 2 6 24 120 720 5040
+		var a = prompt("a:");
+		var b = prompt("b:");
+		var h = prompt("h:");
+		var sum = 0;
+		a = +a;
+		b = +b;
+		h = +h;
+		if(a && b && h){
+			for(i = a; i <= b; i += h){
+		        f = factorial(i);
+		        sum += f;		        
+		    };
+
+			function factorial(n){
+			    var res = +n;
+
+			    for(j=n; j>1; j--){
+			        res = res*(j-1);
+			    }
+			    return res;
+			};
+		}
+		document.write(sum);		
+	</script>
+</body>
+</html>
