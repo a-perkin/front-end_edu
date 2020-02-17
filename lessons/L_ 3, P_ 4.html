@@ -7,15 +7,21 @@
 <body>
 
 	<script>
-		//Пункт 3
+		//Отгадать целое число, которое "загадал" компьютер в определенном диапазоне. 
+		//Использовать генерацию случайного числа Math.random(), диапазон - от 0 до 20. 
+		//Система должна подсказывать: "холодно" (когда до числа больше 4 значений), "тепло" (2-4 значения), "несите мне азот" (1-2 значения)
+		
+		//Пункт 4
 		var input_num = prompt("Введите число:");
 		input_num = +input_num;
 		var random_num = Math.floor(Math.random() * 21);
+		
 		if((input_num >= random_num + 1 && input_num <= random_num + 2) || (input_num <= random_num - 1 && input_num >= random_num - 2)) alert("Несите мне азот");
 		else if((input_num > random_num + 2 && input_num <= random_num + 4) || (input_num < random_num - 2 && input_num >= random_num - 4)) alert("Тепло");
 		else if(input_num > random_num + 4 || input_num < random_num - 4) alert("Холодно");
-		console.log('input_num: ' + input_num)
-		console.log('random_num: ' + random_num)
+		
+		console.log('input_num: ' + input_num);
+		console.log('random_num: ' + random_num);
 	</script>
 </body>
 </html>
