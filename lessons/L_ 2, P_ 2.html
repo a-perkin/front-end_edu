@@ -14,22 +14,25 @@
 		var b = prompt("b:");
 		var h = prompt("h:");
 		var sum = 0;
+		
 		a = +a;
 		b = +b;
 		h = +h;
+		
 		if(a && b && h){
 			for(i = a; i <= b; i += h){
-		        f = factorial(i);
-		        sum += f;		        
-		    };
+				f = factorial(i);
+				sum += f;		        
+			};
 
 			function factorial(n){
-			    var res = +n;
+				var res = +n;
 
-			    for(j=n; j>1; j--){
-			        res = res*(j-1);
-			    }
-			    return res;
+				for(j=n; j>1; j--){
+			        	res = res*(j-1);
+				}
+				
+				return res;
 			};
 		}
 		document.write(sum);		
