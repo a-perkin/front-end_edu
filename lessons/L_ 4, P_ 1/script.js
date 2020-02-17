@@ -60,4 +60,4 @@ document.getElementById('max').innerHTML = max;
 //Находим минимальное число
 min = Math.min( ...A);
 console.log('min: ' + min);
-document.getElementById('min').innerHTML = min;
+		document.getElementById('min').innerHTML = min;
