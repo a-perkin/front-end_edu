@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>L_ 4, P_5</title>
+	<style>
+		html, body { font-family: monospace; }
+	</style>
+</head>
+<body>
+	
+	<script>
+		//Нарисовать фигуру - прямоугольник. Фигура должна строить при помощи символов: *, &nbsp;. 
+		//Высота и ширина задается переменными n, m с клавиатуры.
+		var n = prompt('Введите высоту:', 10);
+		var m = prompt('Введите ширину:', 20);
+		var arr = [];
+
+		for(var i=0; i < n; i++){
+		    arr[i] = [];
+		    
+		    for(var j=0; j < m; j++){
+		        if(i == 0 || j == 0 || i == n -1 || j == m - 1) arr[i][j] = '*';
+		        else arr[i][j] = '&nbsp;'
+		    }
+		    document.write(arr[i].join().replace(/,/g, '') + '</br>');
+		}
+	</script>
+</body>
+</html>
