@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>L_ 5, P_ 2</title>
+</head>
+<body>
+			
+		<script>
+			//написать функцию, которая примет как аргумент(параметр) два массива 
+			//и сравнить суммы всех ЧИСЛОВЫХ элементов. 
+			//Тот массив, сумма которого большая - должен вернутся функцией.
+
+			var A = [1, 'a', 2, 'b'];
+			var B = [3, 'c', 4, 'd'];
+
+			function compareArray(a, b){
+			    
+			    var s = function (arr){
+			        summ = 0;
+			        for(i = 0; i < arr.length; i++){
+			            if(typeof arr[i] == 'number') summ += arr[i];
+			        }
+			        return summ;
+			    };
+			    
+			    return s(a) > s(b) ? a : b;
+			};
+
+			console.log(compareArray(A, B));
+		</script>
+</body>
+</html>
