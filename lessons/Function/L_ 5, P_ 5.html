@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>L_ 5, P_ 4</title>
+</head>
+<body>
+	
+	<script>
+		//напиши функцию filter, которая принимает функцию-предикат и массив.
+		//Возвращает она массив значений, для которых предикат вернет true.
+
+		 var input = [1, 2, 3, 4, 5, 6];
+		 function isEven(x) { return x % 2 == 0; } // проверяет на четность
+		 console.log(filter(input, isEven)); // [2, 4, 6];
+
+		 //решение
+		function filter(arr, predicat){
+		    var arr_filtered = arr.filter(predicat);
+		    return arr_filtered;
+		};
+
+	</script>
+</body>
+</html>

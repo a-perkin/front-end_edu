@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>L_ 5, P_ 4</title>
+</head>
+<body>
+	
+	<script>
+		//Создать функцию, которая убирает из строки все символы, которые мы передали вторым аргументом.
+		//'func("hello world", ['l', 'd'])' вернет нам "heo wor"
+
+		function func(str, arr_symbol){
+
+		    for(i = 0; i < arr_symbol.length; i++){
+		       current_regEx = new RegExp(arr_symbol[i], 'g');
+		       str = str.replace(current_regEx, '');
+		    };
+
+		    return str;
+		};
+	</script>
+</body>
+</html>
