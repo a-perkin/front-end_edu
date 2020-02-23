@@ -19,6 +19,19 @@
 
 		    return str;
 		};
+		
+		//мой вариант с заменой массива на несколько аргументов для закрепления темы (учитывать не нужно)
+		//'func("hello world" [,args])' вернет нам "heo wor"
+
+		function repl(str, ...args){
+    
+		    for (var i = 1; i < arguments.length; i++) {
+		       current_regEx = new RegExp(arguments[i], 'g');
+		       str = str.replace(current_regEx, '');
+		    }
+		    
+		    return str;
+		};
 	</script>
 </body>
 </html>
