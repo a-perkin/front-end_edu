@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>L_ 5, P_ 3</title>
+</head>
+<body>
+			
+		<script>
+			//Написать функцию doMath(x, znak, y), которая получает 3 аргумента: числа x и y, строку znak. 
+			//В переменной знак может быть: +, -, *, /, %, ^.
+			//Вывести результат математического действия, указанного в переменной znak.
+
+			function doMath(x, znak, y){
+
+		    var arr = ['+', '-', '*', '/', '%', '^'];
+		    var res = 0;
+		    var index = arr.indexOf(znak);
+
+		    switch(index) {
+		      case 0:
+		        res = x + y;
+		        break;
+
+		      case 1:
+		        res = x - y;
+		        break;
+
+		      case 2:
+		        res = x * y;
+		        break;
+
+		      case 3:
+		        res = x / y;
+		        break;
+
+		      case 4:
+		        res = x % y;
+		        break;
+
+		      case 5:
+		        res = x ^ y;
+		        break;
+
+		      default:
+		        res = 'Введен не правильный знак!'
+		    }
+		    
+		    console.log(res);
+		}
+		</script>
+</body>
+</html>
